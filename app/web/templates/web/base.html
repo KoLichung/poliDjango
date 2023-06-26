@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang = "zh-Hant" dir="ltr">
+<head>
+  <meta charset = "utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name = "viewport", content= "width = device-width, initial-scale = 1" >
+  <meta name = "robots" content = "index, follow">
+  <meta name = "description" content="">
+  
+  <title>波麗壁布</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="{% static 'web/assets/img/favicon.ico' %}">
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'web/assets/img/favicon.ico' %}">
+
+  <script src="{% static 'web//assets/js/config.js' %}"></script>
+  <!-- <script src="{% static 'web/vendors/simplebar/simplebar.min.js' %}"></script> -->
+
+  <!-- css -->
+  <link rel="stylesheet" href="{% static 'web/vendors/swiper/swiper-bundle.min.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+  <link href="{% static 'web/vendors/overlayscrollbars/OverlayScrollbars.min.css' %}" rel="stylesheet">
+  <link href="{% static 'web/assets/css/theme.min.css' %}" rel="stylesheet" id="style-default">
+  <link href="{% static 'web/assets/css/user.css' %}" rel="stylesheet" id="user-style-default">
+  <link href="{% static 'web/vendors/glightbox/glightbox.min.css' %}" rel="stylesheet" />
+</head>
+<body class="bg-white">
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v17.0&appId=295205770520844&autoLogAppEvents=1" nonce="vygNJ4Qz"></script>
+
+  <!-- nav bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white" >
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">
+          <img src="{% static 'web/assets/img/logo-poli.jpg' %}" alt="full-color logo" height="60px">  
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">關於波麗壁布</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'process_price' %}"><span class="fas fa-shopping-bag" data-fa-transform="shrink-6 down-1"></span>服務流程與報價</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'types' %}">款式選擇</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'featured_case' %}">精選案例</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'q_and_a' %}"><span class="fas fa-info-circle" data-fa-transform="shrink-6 down-1"></span>常見問與答</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">聯絡我們</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  {% block content %}{% endblock %}
+
+  <!-- footer -->
+  <footer class="py-5" style="background-color: #444;" >
+    <div class="container" style="max-width: 1280px;">
+
+      <div class="row align-items-center ">
+        <div class="col-10 col-md-4 mx-auto align-items-center">
+          <div class="fb-page" data-href="https://www.facebook.com/FullColor265/" data-tabs="timeline" 
+            data-width="320" data-height="200" 
+            data-small-header="false" data-adapt-container-width="false" 
+            data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/FullColor265/" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/FullColor265/">Full Color波麗壁布</a></blockquote>
+            </div>
+        </div>
+
+        <div class="col-10 col-md-4 text-white mx-auto order-2 order-md-1 mt-4 mt-md-0">
+          <div class="mx-3 text-start" >
+            <div class="footer-title">
+              富潤股份有限公司
+            </div>
+            <div class="footer-text">
+              TEL：04-7582468#261<br>
+              傳真：04-7582470<br>
+              地址：50742彰化縣線西鄉下犁路101-11號
+            </div>
+          </div>
+        </div>
+
+        <div class="col-10 col-md-4 text-white mx-auto order-1 order-md-2 mt-4">
+          <div class="my-2 text-start">
+            <a class="outlined-fb-btn" href="https://www.facebook.com/FullColor265/">
+              <span class="fab fa-facebook-square"></span>
+              FULLCOLOR 波麗壁布
+            </a>
+          </div>
+          <div class="my-3 text-start">
+            <a class="outlined-line-btn" href="https://www.facebook.com/FullColor265/">
+              <span class="fab fa-line"></span>
+              波麗壁布 LINE 客服
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center text-white mt-4">©富潤股份有限公司 ©波麗壁布 All Rights Reserved.</div>
+      
+    </div>
+  </footer>
+
+  <div class="side-button text-white" style="display:block">
+    <div>
+        <a class="side-action-btn" style="background-color:rgb(88,192,56)" type="button" target="_blank" href="https://line.me/R/ti/p/{{user.line_id}}">
+            <img src="{% static 'web/assets/img/icon/icon-line.png' %}" width="60" height="60">
+        </a>
+    </div>
+    <!-- <div>
+        <button class="side-action-btn btn" style="background-color:#f7ae11" type="button" onclick="callUser()" >
+            <img src="{% static 'web/assets/img/icon/icon-phone.png'%}" width="28" height="28">
+        </button>
+    </div> -->
+    <!-- <div id="backToTop" >
+        <button  class="side-action-btn btn" style="background-color:grey" type="button"  onclick="backToTop()" >
+            <img src="{% static 'web/assets/img/icon/icon-up.png'%}" width="40" height="40" style="padding:4px">
+        </button>
+    </div> -->
+  </div>
+
+  <script>
+      // const sideButtons = document.querySelector('.side-button');
+      // const header = document.querySelector('#header');
+      
+      // window.addEventListener("scroll",function(){
+      //     console.log(header.getBoundingClientRect().top);
+          
+      //     header.getBoundingClientRect().top === 0 || header.getBoundingClientRect().top < 350
+      //     ? sideButtons.setAttribute('style','display:block') 
+      //     : sideButtons.setAttribute('style','display:none')
+      // });
+
+      function backToTop(){
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+          });
+        }
+      
+  </script>
+
+  <!-- JavaScripts -->
+  <script src="{% static 'web/vendors/popper/popper.min.js' %}"></script>
+  <script src="{% static 'web/vendors/bootstrap/bootstrap.min.js' %}"></script>
+  <script src="{% static 'web/vendors/anchorjs/anchor.min.js' %}"></script>
+  <script src="{% static 'web/vendors/is/is.min.js' %}"></script>
+  <script src="{% static 'web/vendors/swiper/swiper-bundle.min.js' %}"> </script>
+  <script src="{% static 'web/vendors/typed.js/typed.js' %}"> </script>
+  <script src="{% static 'web/vendors/fontawesome/all.min.js' %}"></script>
+  <script src="{% static 'web/vendors/lodash/lodash.min.js' %}"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+  <script src="{% static 'web/vendors/list.js/list.min.js' %}"></script>
+  <script src="{% static 'web/assets/js/theme.js' %}"></script>
+  <script src="{% static 'web/vendors/glightbox/glightbox.min.js' %}"></script>
+</body>
+</html>
