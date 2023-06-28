@@ -10,7 +10,7 @@
         <div class="card mb-3">
           <img class="card-img-top " src="{% static 'web/assets/img/contact_us.jpg' %}" alt="Card image cap" style="max-height: 200px; object-fit: cover;">
           <div class="card-body px-5 py-5">
-            <h5 class="card-title">有任何點子、計畫想實現，歡迎您填寫<br>我們提供專業諮詢服務，以客戶滿意為服務宗旨！</h5>
+            <h5 class="card-title">消費者聯絡：請直接透過 LINE 客服聯絡 ＠aaabb23<br>商業合作，請填寫資料，我們會盡快與您聯絡！</h5>
             <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
               
               <div class="row mt-4">
@@ -46,7 +46,7 @@
                 <textarea class="form-control" id="customerSubject" name="customerSubject" value="customerSubject" rows="3"></textarea>
               </div>
               <div class="text-center mt-5">
-                <button class="btn yellow-button" type="submit">送出</button>
+                <button class="btn" style="background-color: #F6D247;color: white;" type="submit">確認送出</button>
               </div>
             </form>
           </div>
