@@ -14,6 +14,10 @@ def process_price(request):
 
 def types(request):
     style = request.GET.get('style')
+    
+    if style == None:
+        style = 'all'
+
     return render(request,'web/types.html',{'style':style})
 
 def featured_case(request):
