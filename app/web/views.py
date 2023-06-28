@@ -1,6 +1,5 @@
 from django.shortcuts import render
-
-# Create your views here.
+from modelCore.models import QAPost
 
 def index(request):
     return render(request,'web/index.html')
@@ -14,7 +13,7 @@ def process_price(request):
 
 def types(request):
     style = request.GET.get('style')
-    
+
     if style == None:
         style = 'all'
 
@@ -24,7 +23,8 @@ def featured_case(request):
     return render(request,'web/featured_case.html')
 
 def q_and_a(request):
-    return render(request,'web/q_and_a.html')
+    posts = QAPost.objects.all().order_by('id')
+    return render(request,'web/q_and_a.html',{'posts':posts})
 
 def contact(request):
     return render(request,'web/contact.html')

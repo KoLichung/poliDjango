@@ -38,3 +38,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     USERNAME_FIELD = 'phone'
+
+class QAPost(models.Model):
+    title = models.CharField(max_length = 255, blank = True, null=True)
+    body = models.TextField(default='')
