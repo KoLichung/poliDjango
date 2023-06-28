@@ -2,31 +2,57 @@
 {% load static %}
 
 
-<div class="container-fluid text-center my-3 position-relative center px-0">
-    <img class="img-fluid" src="{% static 'web' %}/assets/img/values1.png" style="width:100%; height: 230px;" alt="">
-    <div class="position-absolute top-50 start-50 translate-middle">
-        <div class="about-section-title text-white">
-            <h1 class="text-white">聯絡我們</h1> 
+<!-- content -->
+<br><br><br>
+<div class="bg-white">
+    <div class="mx-auto pt-5 pb-3" style="max-width: 800px;">
+      <div class="mt-4 mb-6 mx-5">
+        <div class="card mb-3">
+          <img class="card-img-top " src="{% static 'web/assets/img/contact_us.jpg' %}" alt="Card image cap" style="max-height: 200px; object-fit: cover;">
+          <div class="card-body px-5 py-5">
+            <h5 class="card-title">有任何點子、計畫想實現，歡迎您填寫<br>我們提供專業諮詢服務，以客戶滿意為服務宗旨！</h5>
+            <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+              
+              <div class="row mt-4">
+                <div class="col-12 col-lg-6">
+                  <div class="mb-3">
+                    <label class="form-label" for="customerName">姓名 <span class="form-valid-text">*必填</span></label>
+                    <input class="form-control has-validation" id="customerName" type="text" name="customerName" value=""/>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="mb-3">
+                    <label class="form-label" for="customerEmail">聯絡信箱 <span class="form-valid-text">*必填</span></label>
+                    <input class="form-control" id="customerEmail" type="email" name="customerEmail" value=""/>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="mb-3">
+                    <label class="form-label" for="customerPhone">聯絡電話</label>
+                    <input class="form-control" id="customerPhone" type="text" name="customerPhone" value=""/>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="mb-3">
+                    <label class="form-label" for="customerLine">LINE</label>
+                    <input class="form-control" id="customerLine" type="text" name="customerLine" value=""/>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="customerSubject">需求說明 <span class="form-valid-text">*必填</span></label>
+                <textarea class="form-control" id="customerSubject" name="customerSubject" value="customerSubject" rows="3"></textarea>
+              </div>
+              <div class="text-center mt-5">
+                <button class="btn yellow-button" type="submit">送出</button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div class="container text-center my-5">
-    <div class="row">
-        <div class="col-12 col-md-4">
-            <img class="img-fluid" src="{% static 'web' %}/assets/img/prices/price_a.jpg" alt="">
-        </div>
-        <div class="col-12 col-md-4">
-            <img class="img-fluid" src="{% static 'web' %}/assets/img/prices/price_b.jpg" alt="">
-        </div>
-        <div class="col-12 col-md-4">
-            <img class="img-fluid" src="{% static 'web' %}/assets/img/prices/price_c.jpg" alt="">
-        </div>
-    </div>
-</div>
-
-<div class="container text-center my-5 px-0">
-    <img class="img-fluid" src="{% static 'web' %}/assets/img/prices/buy_process.jpg" alt="">
 </div>
 
 
