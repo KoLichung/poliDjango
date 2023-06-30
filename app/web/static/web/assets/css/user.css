@@ -30,6 +30,16 @@ p{
   width: 100%;
 }
 
+.header-height {
+  height: 60vh; /* 设置高度为视口高度的 100% */
+}
+
+@media (max-width: 768px) {
+  .header-height {
+    height: 50vh; /* 在小屏幕上调整高度为视口高度的 50% */
+  }
+}
+
 .action-button{
   padding: 10px 20px;
   border-radius: 30px;
@@ -154,6 +164,18 @@ div.side-button{
 
 .bg_process_prices{
   background-image: url('/static/web/assets/img/process_page/bg_process.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#index_carousel{
+  background-image: url('/static/web/assets/img/index_page/cases/bg.png');
+}
+
+#index_style{
+  background-image: url('/static/web/assets/img/index_page/styles/styles_bg.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
