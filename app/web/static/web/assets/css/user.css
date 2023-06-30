@@ -25,7 +25,7 @@ p{
 .bg-frontpage-cover{
   background-size: cover;
   background-position: center center;
-  background-image: url('/static/web/assets/img/index_bg.png');
+  background-image: url('/static/web/assets/img/index_page/index_bg.png');
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -152,3 +152,10 @@ div.side-button{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.bg_process_prices{
+  background-image: url('/static/web/assets/img/process_page/bg_process.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
