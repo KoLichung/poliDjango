@@ -36,7 +36,7 @@ p{
 
 @media (max-width: 768px) {
   .header-height {
-    height: 450px; /* 在小屏幕上调整高度为视口高度的 50% */
+    height: 420px; /* 在小屏幕上调整高度为视口高度的 50% */
   }
 }
 
