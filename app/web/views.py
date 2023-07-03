@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect,render
 from modelCore.models import QAPost
 
 def index(request):
@@ -27,4 +27,16 @@ def q_and_a(request):
     return render(request,'web/q_and_a.html',{'posts':posts})
 
 def contact(request):
+    if request.method == 'POST':
+        userName = request.POST.get('customerName')
+        email = request.POST.get('customerEmail')
+        phone = request.POST.get('customerPhone')
+        line = request.POST.get('customerLine')
+        subject = request.POST.get('customerSubject')
+        message = "name:"+userName + "\n" + "email:"+email + "\n" + "phone:"+phone + "\n" + "line:"+line + "\n" + "subject:"+subject + "\n"
+        from mailapp.tasks import send_test_mail
+        send_test_mail('網站新案件:'+userName, message)
+        return redirect('message_sent')
+
+
     return render(request,'web/contact.html')

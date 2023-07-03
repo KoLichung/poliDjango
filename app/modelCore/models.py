@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.urls import reverse
 
+from ckeditor_uploader.fields import RichTextUploadingField
+
 class UserManager(BaseUserManager):
 
     def create_user(self, phone, password=None, **extra_fields):
@@ -41,4 +43,4 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 class QAPost(models.Model):
     title = models.CharField(max_length = 255, blank = True, null=True)
-    body = models.TextField(default='')
+    body = RichTextUploadingField(config_name='default')
