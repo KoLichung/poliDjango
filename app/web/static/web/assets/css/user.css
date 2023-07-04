@@ -36,7 +36,14 @@ p{
 
 @media (max-width: 768px) {
   .header-height {
-    height: 400px; /* 在小屏幕上调整高度为视口高度的 50% */
+    height: 520px; /* 在小屏幕上调整高度为视口高度的 50% */
+  }
+  .bg-frontpage-cover{
+    background-size: cover;
+    background-position: center center;
+    background-image: url('/static/web/assets/img/index_page/index_bg_mobile.png');
+    background-repeat: no-repeat;
+    width: 100%;
   }
 }
 
@@ -172,6 +179,10 @@ div.side-button{
 
 #index_carousel{
   background-image: url('/static/web/assets/img/index_page/cases/bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 #index_style{
