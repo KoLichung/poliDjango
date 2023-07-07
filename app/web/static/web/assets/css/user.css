@@ -229,6 +229,14 @@ div.side-button{
   .video-container:last-child {
     margin-bottom: 0;
   }
+
+  .bg-frontpage-cover{
+    background-size: cover;
+    background-position: center center;
+    background-image: url('/static/web/assets/img/index_page/index_bg_mobile.png');
+    background-repeat: no-repeat;
+    width: 100%;
+  }
 }
 
 .contact-tag {
