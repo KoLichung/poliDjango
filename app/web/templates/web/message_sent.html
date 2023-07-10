@@ -1,0 +1,17 @@
+{% extends 'web/base.html' %} {% block content %}
+{% load static %}
+
+<!-- content -->
+<div class="bg-white">
+  <div class="mx-auto pt-10 pb-3" style="max-width: 800px;">
+    <div class="text-center">  
+      您的訊息已送出！<br>我們會儘速回覆您！<br>
+      <img src="{% static 'web/assets/img/email_sent.svg' %}" alt="" class="img-fluid" style="height: 300px;"> 
+    </div>
+    <div class="text-center my-6">
+      <a href="{% url 'index' %}" class="btn yellow-button">回首頁</a>
+    </div>
+  </div>
+</div>
+{% endblock %} 
+ 

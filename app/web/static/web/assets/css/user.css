@@ -248,3 +248,16 @@ div.side-button{
   margin-top: 5px;
   border: 1px solid #ccc; /* Light gray border */
 }
+
+.hover-zoom {
+  transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+.yellow-button{
+  background-color: #4267B2;
+  color: white;
+}
