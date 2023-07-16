@@ -40,3 +40,6 @@ def contact(request):
 
 
     return render(request,'web/contact.html')
+
+def message_sent(request):
+    return render(request,'web/message_sent.html')

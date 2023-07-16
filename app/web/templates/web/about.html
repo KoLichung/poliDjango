@@ -2,18 +2,37 @@
 {% load static %}
 
 
-<div class="container-fluid text-center position-relative center px-0">
-    <img class="img-fluid" src="{% static 'web' %}/assets/img/values1.png" style="width:100%; height: 360px;" alt="">
-    <div class="position-absolute top-50 start-50 translate-middle">
+<div class="container-fluid text-center mt-3 position-relative center px-0">
+    <img class="img-fluid d-md-none" src="{% static 'web' %}/assets/img/cases_page/header_bg.jpg" style="width:100%; height: 320px;object-fit: cover;" alt="">
+    <img class="img-fluid d-none d-md-block" src="{% static 'web' %}/assets/img/cases_page/header_bg_long.png" style="width:100%; height: 320px; object-fit: cover;" alt="">
+    <div class="position-absolute top-50 start-50 translate-middle mt-3">
         <div class="about-section-title text-white">
-            <h1 class="text-white">關於波麗壁布</h1> 
+            <!-- <h1 class="text-white">服務流程與報價</h1>  -->
+            <img class="img-fluid" src="{% static 'web' %}/assets/img/types/header_word.png" style="width:250px;" alt="">
         </div>
     </div>
 </div>
 
-<div class="text-center py-5" style="background-color: #F5F5F5;">
-    關於波麗壁布寫在這裡
-</div>
+<div id="index_style" class="text-center">
+    <div class="text-center mx-5 mx-md-auto pt-5" style="max-width: 700px;">
+        <h4 style="color: #D22D7E;">「波麗壁布是您輕裝修的好選擇！」</h4><br>
+        
+        <p>波麗壁布致力於滿足您對於牆壁裝飾的想像。透過我們提供的輕裝修解決方案，
+        您可以輕鬆改變居家空間的視覺效果，無需進行大規模的建築工程。</p>
 
+        <p>波麗壁布採用高精度布料轉印技術，呈現出逼真的效果，讓您享受高級建材的視覺享受；
+        同時，我們非常重視產品的安全，波麗壁布採用無毒材質，並獲得多項環保認證，是真正的綠色產品。</p>
+
+        <p>為了應對台灣長年潮濕的氣候環境，我們經過上百款布料的嚴格測試，確保波麗壁布以100%純布織造，能夠經得起時間的考驗。相比壁紙，波麗壁布不會在3到5年後硬化或剝落，讓您省卻更換的困擾。</p>
+
+        <p>此外，若您有客製化的需求，我們擁有專業的設計團隊，能夠為您量身打造相應的設計方案。</p>
+
+        <p>居家輕裝修，波麗壁布衷心為您提供服務。</p>
+        
+    </div>
+
+    <img class="col-11 pt-1 pb-4" src="{% static 'web' %}/assets/img/tea_time.jpg" style="max-width: 700px;" alt="">
+
+</div>  
 
 {% endblock %}

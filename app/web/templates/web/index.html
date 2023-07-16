@@ -10,10 +10,10 @@
             <img src="{% static 'web/assets/img/index_page/index_bg_logo.png' %}" alt="Snow" style="width:300px;">
           </div>
           <div class="my-4">
-            <a class="action-button" href="#features" style="background-color: #9FBF42;">選擇款式</a>
+            <a class="action-button" href="{% url 'types' %}" style="background-color: #9FBF42;">選擇款式</a>
           </div>
           <div class="my-4">
-            <a class="action-button" href="#features" style="background-color: #D22D7E;">查看流程與售價</a>
+            <a class="action-button" href="{% url 'process_price' %}" style="background-color: #D22D7E;">查看流程與售價</a>
           </div>
         </div>
       </div>
@@ -117,7 +117,7 @@
 
   <!-- 款式 -->
   <div id="index_style">
-    <div class="container my-3 py-3" style="max-width: 1080px;">
+    <div class="container my-3 py-3 text-center" style="max-width: 1080px;">
       
       <div class="row justify-content-center mt-3">
         <div class="col-12 text-center">
@@ -128,30 +128,32 @@
 
       <div class="row justify-content-center mb-3 mx-1 mx-md-3 mx-md-0">
         <div class="col-6 col-md-3 d-flex justify-content-center">
-          <img src="{% static 'web' %}/assets/img/index_page/styles/2.png" alt="" style="max-width: 100%;">
+          <a href="{% url 'types' %}?style=marble"><img class="hover-zoom" src="{% static 'web' %}/assets/img/index_page/styles/2.png" alt="" style="max-width: 100%;"></a> 
         </div>
         <div class="col-6 col-md-3 d-flex justify-content-center">
-          <img src="{% static 'web' %}/assets/img/index_page/styles/3.png" alt="" style="max-width: 100%;">
+          <a href="{% url 'types' %}?style=concrete"><img img class="hover-zoom" src="{% static 'web' %}/assets/img/index_page/styles/3.png" alt="" style="max-width: 100%;"></a> 
         </div>
         <div class="col-6 col-md-3 d-flex justify-content-center">
-          <img src="{% static 'web' %}/assets/img/index_page/styles/4.png" alt="" style="max-width: 100%;">
+          <a href="{% url 'types' %}?style=china"><img img class="hover-zoom" src="{% static 'web' %}/assets/img/index_page/styles/4.png" alt="" style="max-width: 100%;"></a> 
         </div>
         <div class="col-6 col-md-3 d-flex justify-content-center">
-          <img src="{% static 'web' %}/assets/img/index_page/styles/5.png" alt="" style="max-width: 100%;">
+          <a href="{% url 'types' %}?style=wood"><img img class="hover-zoom" src="{% static 'web' %}/assets/img/index_page/styles/5.png" alt="" style="max-width: 100%;"></a> 
         </div>
         <div class="col-6 col-md-3 d-flex justify-content-center">
-          <img src="{% static 'web' %}/assets/img/index_page/styles/6.png" alt="" style="max-width: 100%;">
+          <a href="{% url 'types' %}?style=map"><img img class="hover-zoom" src="{% static 'web' %}/assets/img/index_page/styles/6.png" alt="" style="max-width: 100%;"></a> 
         </div>
         <div class="col-6 col-md-3 d-flex justify-content-center">
-          <img src="{% static 'web' %}/assets/img/index_page/styles/7.png" alt="" style="max-width: 100%;">
+          <a href="{% url 'types' %}?style=fair-faced"><img img class="hover-zoom" src="{% static 'web' %}/assets/img/index_page/styles/7.png" alt="" style="max-width: 100%;"></a> 
         </div>
         <div class="col-6 col-md-3 d-flex justify-content-center">
-          <img src="{% static 'web' %}/assets/img/index_page/styles/8.png" alt="" style="max-width: 100%;">
+          <a href="{% url 'types' %}?style=brick"><img img class="hover-zoom" src="{% static 'web' %}/assets/img/index_page/styles/8.png" alt="" style="max-width: 100%;"></a> 
         </div>
         <div class="col-6 col-md-3 d-flex justify-content-center">
-          <img src="{% static 'web' %}/assets/img/index_page/styles/9.png" alt="" style="max-width: 100%;">
+          <a href="{% url 'types' %}?style=art"><img img class="hover-zoom" src="{% static 'web' %}/assets/img/index_page/styles/9.png" alt="" style="max-width: 100%;"></a> 
         </div>
       </div>
+
+      <a href="{% url 'types' %}"><button type="button" class="btn btn-outline-secondary my-3">看更多款式</button></a>
     </div>
   </div>
 
@@ -162,18 +164,53 @@
       <h2 class="text-center">波麗壁布實際測試影片</h2>
       <h2 class="text-center" style="color: white;">Product Test Videos</h2>
       
-      <div class="row justify-content-center mt-3">
-        <div class="col-12 col-md-4 d-flex justify-content-center px-2 my-2">
-          <img src="{% static 'web' %}/assets/img/index_page/videos/img_video_1.png" alt="" style="max-width: 100%;">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="video-container">
+            <img src="{% static 'web' %}/assets/img/index_page/videos/img_video_1.png" alt="Image 1" class="overlay-image">
+            <div class="player" data-video-id="GBnSE4Ul074" data-aspect-ratio="16:9"></div>
+          </div>
         </div>
-        <div class="col-12 col-md-4 d-flex justify-content-center px-2 my-2">
-          <img src="{% static 'web' %}/assets/img/index_page/videos/img_video_2.png" alt="" style="max-width: 100%;">
+        <div class="col-md-4 col-sm-12">
+          <div class="video-container">
+            <img src="{% static 'web' %}/assets/img/index_page/videos/img_video_2.png" alt="Image 2" class="overlay-image">
+            <div class="player" data-video-id="dUpVK8LVg9M" data-aspect-ratio="16:9"></div>
+          </div>
         </div>
-        <div class="col-12 col-md-4 d-flex justify-content-center px-2 my-2">
-          <img src="{% static 'web' %}/assets/img/index_page/videos/img_video_3.png" alt="" style="max-width: 100%;">
+        <div class="col-md-4 col-sm-12">
+          <div class="video-container">
+            <img src="{% static 'web' %}/assets/img/index_page/videos/img_video_3.png" alt="Image 3" class="overlay-image">
+            <div class="player" data-video-id="3_2_Li-J5FI" data-aspect-ratio="16:9"></div>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var overlayImages = document.querySelectorAll('.overlay-image');
+
+      overlayImages.forEach(function(image) {
+        var playerElement = image.parentNode.querySelector('.player');
+        var videoId = playerElement.dataset.videoId;
+        var aspectRatio = playerElement.dataset.aspectRatio;
+
+        image.addEventListener('click', function() {
+          image.style.display = 'none';
+          playerElement.innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+
+          // Calculate and set the padding-bottom value for aspect ratio
+          var aspectRatioParts = aspectRatio.split(':');
+          var paddingBottom = (parseInt(aspectRatioParts[1], 10) / parseInt(aspectRatioParts[0], 10)) * 100;
+          playerElement.style.paddingBottom = paddingBottom + '%';
+        });
+        
+      });
+    });
+</script>
 
   {% endblock %}

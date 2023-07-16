@@ -11,4 +11,5 @@ urlpatterns = [
     path('featured_case', views.featured_case, name='featured_case'),
     path('q_and_a', views.q_and_a, name='q_and_a'),
     path('contact', views.contact, name='contact'),
+    path('message_sent', views.message_sent, name='message_sent'),
 ]

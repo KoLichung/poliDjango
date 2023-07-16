@@ -2,15 +2,27 @@
 {% load static %}
 
 
+
 <!-- content -->
-<br><br><br>
-<div class="bg-white">
+<div class="container-fluid text-center mt-3 position-relative center px-0">
+  <img class="img-fluid d-md-none" src="{% static 'web' %}/assets/img/cases_page/header_bg.jpg" style="width:100%; height: 320px;object-fit: cover;" alt="">
+  <img class="img-fluid d-none d-md-block" src="{% static 'web' %}/assets/img/cases_page/header_bg_long.png" style="width:100%; height: 320px; object-fit: cover;" alt="">
+  <div class="position-absolute top-50 start-50 translate-middle mt-3">
+      <div class="about-section-title text-white">
+          <h2>聯絡我們</h2> 
+          <!-- <img class="img-fluid" src="{% static 'web' %}/assets/img/types/header_word.png" style="width:250px;" alt=""> -->
+      </div>
+  </div>
+</div>
+
+<div style="background-image: url('/static/web/assets/img/index_page/styles/styles_bg.png');">
+
     <div class="mx-auto pt-5 pb-3" style="max-width: 800px;">
-      <div class="mt-4 mb-6 mx-5">
+      <div class="mt-4 mb-6 mx-2">
         <div class="card mb-3">
-          <img class="card-img-top " src="{% static 'web/assets/img/contact_us.jpg' %}" alt="Card image cap" style="max-height: 200px; object-fit: cover;">
+          <img class="card-img-top " src="{% static 'web/assets/img/contact_page/contact_us.jpg' %}" alt="Card image cap" style="max-height: 200px; object-fit: cover;">
           <div class="card-body px-5 py-5">
-            <h5 class="card-title">消費者聯絡：請直接透過 LINE 客服聯絡 ＠aaabb23<br>商業合作，請填寫資料，我們會盡快與您聯絡！</h5>
+            <h5 class="card-title">消費者聯絡：請直接透過 LINE 客服聯絡 @171mhtlm<br><br>商業合作，請填寫資料，我們會盡快與您聯絡！</h5>
             <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
               
               <div class="row mt-4">
@@ -23,7 +35,7 @@
                 <div class="col-12 col-lg-6">
                   <div class="mb-3">
                     <label class="form-label" for="customerEmail">聯絡信箱 <span class="form-valid-text">*必填</span></label>
-                    <input class="form-control" id="customerEmail" type="email" name="customerEmail" value=""/>
+                    <input class="form-control mx-1" id="customerEmail" type="email" name="customerEmail" value=""/>
                   </div>
                 </div>
               </div>
@@ -37,7 +49,7 @@
                 <div class="col-12 col-lg-6">
                   <div class="mb-3">
                     <label class="form-label" for="customerLine">LINE</label>
-                    <input class="form-control" id="customerLine" type="text" name="customerLine" value=""/>
+                    <input class="form-control mx-1" id="customerLine" type="text" name="customerLine" value=""/>
                   </div>
                 </div>
               </div>
