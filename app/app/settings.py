@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '202.182.104.215',
+    'poli.full-color.com.tw',
 ]
 
 ADMINS = (
