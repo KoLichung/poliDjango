@@ -24,6 +24,7 @@ SECRET_KEY = 'django-insecure-^pxr2pc@d81=s1*hh9t_pcs4^a-pazd_+@lv40nscf7-oh$&4w
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+BASE_URL = "https://poli.full-color.com.tw"
 
 ALLOWED_HOSTS = [
     'localhost',
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     'rest_framework',
     'rest_framework.authtoken',
     'modelCore',
