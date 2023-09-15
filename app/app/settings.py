@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-^pxr2pc@d81=s1*hh9t_pcs4^a-pazd_+@lv40nscf7-oh$&4w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 BASE_URL = "https://poli.full-color.com.tw"
+SECURE_SSL_REDIRECT = True
 
 ALLOWED_HOSTS = [
     'localhost',
