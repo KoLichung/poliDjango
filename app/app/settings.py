@@ -28,6 +28,7 @@ BASE_URL = "https://poli.full-color.com.tw"
 SECURE_SSL_REDIRECT = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'localhost',
     '202.182.104.215',
     'poli.full-color.com.tw',

@@ -82,6 +82,38 @@
             {% else %}
                 <a class='nav-link' href="{% url 'types' %}?style=popular" >人氣款式</a>
             {% endif %}	
+
+            
+            {% if style == "plant" %}
+                <a class='nav-link active shadow-sm rounded' href="{% url 'types' %}?style=plant" >花草植物</a>
+            {% else %}
+                <a class='nav-link' href="{% url 'types' %}?style=plant" >花草植物</a>
+            {% endif %}	
+
+            {% if style == "dot" %}
+                <a class='nav-link active shadow-sm rounded' href="{% url 'types' %}?style=dot" >波卡點點</a>
+            {% else %}
+                <a class='nav-link' href="{% url 'types' %}?style=dot" >波卡點點</a>
+            {% endif %}	
+
+            {% if style == "totem" %}
+                <a class='nav-link active shadow-sm rounded' href="{% url 'types' %}?style=totem" >波斯圖騰</a>
+            {% else %}
+                <a class='nav-link' href="{% url 'types' %}?style=totem" >波斯圖騰</a>
+            {% endif %}	
+
+            {% if style == "coating" %}
+                <a class='nav-link active shadow-sm rounded' href="{% url 'types' %}?style=coating" >仿塗料</a>
+            {% else %}
+                <a class='nav-link' href="{% url 'types' %}?style=coating" >仿塗料</a>
+            {% endif %}
+
+            {% if style == "terrazzo" %}
+                <a class='nav-link active shadow-sm rounded' href="{% url 'types' %}?style=terrazzo" >水磨石</a>
+            {% else %}
+                <a class='nav-link' href="{% url 'types' %}?style=terrazzo" >水磨石</a>
+            {% endif %}	
+
         </nav>
 
         <div class="card col-12 my-3">
@@ -90,7 +122,7 @@
                 <div class="col-sm-auto mb-2 mb-sm-0">
                 <h6 class="mb-0">共找到 
                     
-                    {% if style == None or style == 'all' %} 79
+                    {% if style == None or style == 'all' %} 116
                     {% elif style == "fair-faced" %} 5
                     {% elif style == "concrete" %} 8
                     {% elif style == "marble" %} 10
@@ -101,6 +133,11 @@
                     {% elif style == "art" %} 10
                     {% elif style == "map" %} 10
                     {% elif style == "popular" %} 12
+                    {% elif style == "plant" %} 6
+                    {% elif style == "dot" %} 6
+                    {% elif style == "totem" %} 6
+                    {% elif style == "coating" %} 9
+                    {% elif style == "terrazzo" %} 10
                     {% endif %}
 
                     個產品
@@ -1189,6 +1226,453 @@
                                 <div class="overflow-hidden">
                                     <div class="position-relative rounded-top overflow-hidden">
                                         <a href="{% static 'web/assets/img/types/map_B09007.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/map_B09007_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            {% endif %}
+            
+            <!-- plant 花草植物 -->
+            {% if style == "plant" or style == "all" %}
+                <div class="card-body">
+                    <div class="row">
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/plant_A13001.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/plant_A13001_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/plant_A13002.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/plant_A13002_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/plant_A13003.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/plant_A13003_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/plant_A13004.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/plant_A13004_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/plant_A13005.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/plant_A13005_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/plant_A13006.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/plant_A13006_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            {% endif %}
+
+            <!-- dot 波卡點點 -->
+            {% if style == "dot" or style == "all" %}
+                <div class="card-body">
+                    <div class="row">
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/dot_A11001.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/dot_A11001_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/dot_A11002.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/dot_A11002_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/dot_A11003.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/dot_A11003_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/dot_A11004.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/dot_A11004_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/dot_A11005.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/dot_A11005_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/dot_A11006.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/dot_A11006_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            {% endif %}
+
+            <!-- totem 圖騰 -->
+            {% if style == "totem" or style == "all" %}
+                <div class="card-body">
+                    <div class="row">
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/totem_A12001.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/totem_A12001_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/totem_A12002.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/totem_A12002_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/totem_A12003.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/totem_A12003_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/totem_A12004.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/totem_A12004_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/totem_A12005.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/totem_A12005_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/totem_A12006.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/totem_A12006_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            {% endif %}
+            
+            <!-- coating 仿塗料 -->
+            {% if style == "coating" or style == "all" %}
+                <div class="card-body">
+                    <div class="row">
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/coating_A14007_1.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/coating_A14007_1_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/coating_A14007_2.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/coating_A14007_2_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/coating_A14007_3.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/coating_A14007_3_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/coating_A14008_1.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/coating_A14008_1_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/coating_A14008_2.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/coating_A14008_2_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/coating_A14008_3.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/coating_A14008_3_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/coating_A14008_4.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/coating_A14008_4_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/coating_A14009_1.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/coating_A14009_1_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/coating_A14009_2.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/coating_A14009_2_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            {% endif %}
+            
+            <!-- terrazzo 水磨石 -->
+            {% if style == "terrazzo" or style == "all" %}
+                <div class="card-body">
+                    <div class="row">
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/terrazzo_A10001.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/terrazzo_A10001_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/terrazzo_A10002.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/terrazzo_A10002_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/terrazzo_A10003.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/terrazzo_A10003_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/terrazzo_A10004.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/terrazzo_A10004_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/terrazzo_A10005.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/terrazzo_A10005_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/terrazzo_A10006.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/terrazzo_A10006_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/terrazzo_A10007.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/terrazzo_A10007_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/terrazzo_A10008.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/terrazzo_A10008_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/terrazzo_A10009.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/terrazzo_A10009_small.jpg' %}" alt="" /></a>
+                                        <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 col-md-6 col-lg-4">
+                            <div class="border rounded-1 h-100 d-flex flex-column justify-content-between">
+                                <div class="overflow-hidden">
+                                    <div class="position-relative rounded-top overflow-hidden">
+                                        <a href="{% static 'web/assets/img/types/terrazzo_A10010.jpg' %}" data-gallery="gallery-1"><img class="img-fluid rounded" src="{% static 'web/assets/img/types/terrazzo_A10010_small.jpg' %}" alt="" /></a>
                                         <span class="badge rounded-pill bg-success position-absolute mt-1 me-1 z-2 top-0 end-0">推薦</span>
                                     </div>
                                 </div>
